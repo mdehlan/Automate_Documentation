@@ -34,7 +34,3 @@ app.config(function($routeProvider) {
 
 });
 
-app.controller('mainController',function mainController($scope) {
-    $scope.message = 'BlaBlaBla';
-
-});
