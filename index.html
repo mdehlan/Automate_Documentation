@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="app">
 <head>
-    <meta charset="UTF-8">
     <title>Automate_Documentation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--JQuery-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+    <!--Font-Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--Angular-->
+    <script src="templates/angular.min.js"></script>
+    <!--ngroute-->
+    <script language="javascript" type="text/javascript" src="templates/route.min.js"></script>
+    <!--Script`s-->
+    <script language="javascript" type="text/javascript" src="scripts/routes.js"></script>
+
+
+
 </head>
-<body>
-<div>Hey joa</div>
+
+<body ng-controller="mainController">
+
+<!--Menu-->
+<header>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/">Website</a>
+            </div>
+
+            <div class="collapse navbar-collapse" >
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#create"><i class="fa fa-shield"></i>Termin Erstellen</a></li>
+                    <li><a href="#verwalten"><i class="fa fa-check"></i>Termine Verwalten</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="main">
+    <div ng-view></div>
+</div>
+
 </body>
 </html>
