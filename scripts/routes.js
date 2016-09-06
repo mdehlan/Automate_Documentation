@@ -11,25 +11,30 @@ app.config(function($routeProvider) {
 
     // route for the home page
         .when('/', {
-            templateUrl : "../pages/home.html",
+            templateUrl : "pages/home.html",
             controller  : 'mainController'
         })
 
         .when('#', {
-            templateUrl : '../pages/home.html',
+            templateUrl : 'pages/home.html',
             controller  : 'mainController'
         })
 
         // route for the about page
         .when('/create', {
-            templateUrl : '../pages/create.html',
+            templateUrl : 'pages/create.html'
         })
         //route for the login page
 
         .when('/verwalten', {
-            templateUrl : '../pages/verwalten.html',
+            templateUrl : 'pages/verwalten.html',
             controller  : 'mainController'
         })
 
+
+});
+
+app.controller('mainController',function mainController($scope) {
+    $scope.message = 'BlaBlaBla';
 
 });
