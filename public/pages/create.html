@@ -1,7 +1,11 @@
 <!--Create-->
 
 <body>
-<div class="jumbotron text-center">
+<div class="jumbotron text-center" ng-controller="read">
+    <div class="form-group">
+        <label for="inv">Inventarnummer</label>
+        <input type="number" class="form-control" id="inv" ng-model="AD.inv">
+    </div>
     <div class="row">
 
         <!--Linke Seite-->
@@ -10,28 +14,24 @@
             <form>
                 <h3>Von</h3>
                 <div class="form-group">
-                    <label for="ainv">Inventarnummer</label>
-                    <input type="number" class="form-control" id="ainv">
-                </div>
-                <div class="form-group">
                     <label for="aroom">Raum</label>
-                    <input type="number" class="form-control" id="aroom">
+                    <input type="number" class="form-control" id="aroom" ng-model="AD.aroom">
                 </div>
                 <div class="form-group">
                     <label for="atank">Bodentank</label>
-                    <input type="text" class="form-control" id="atank">
+                    <input type="text" class="form-control" id="atank"ng-model="AD.atank">
                 </div>
                 <div class="form-group">
                     <label for="apatch">Patchfeld</label>
-                    <input type="number" class="form-control" id="apatch">
+                    <input type="number" class="form-control" id="apatch" ng-model="AD.apatch">
                 </div>
                 <div class="form-group">
                     <label for="aswitch">Switch</label>
-                    <input type="number" class="form-control" id="aswitch">
+                    <input type="number" class="form-control" id="aswitch" ng-model="AD.aswitch">
                 </div>
                 <div class="form-group">
                     <label for="aport">Port</label>
-                    <input type="number" class="form-control" id="aport">
+                    <input type="number" class="form-control" id="aport" ng-model="AD.aport">
                 </div>
             </form>
         </div>
@@ -42,28 +42,24 @@
             <form>
                 <h3>Nach</h3>
                 <div class="form-group">
-                    <label for="ninv">Inventarnummer</label>
-                    <input type="number" class="form-control" id="ninv">
-                </div>
-                <div class="form-group">
                     <label for="nroom">Raum</label>
-                    <input type="number" class="form-control" id="nroom">
+                    <input type="number" class="form-control" id="nroom" ng-model="AD.nroom">
                 </div>
                 <div class="form-group">
                     <label for="ntank">Bodentank</label>
-                    <input type="text" class="form-control" id="ntank">
+                    <input type="text" class="form-control" id="ntank" ng-model="AD.ntank">
                 </div>
                 <div class="form-group">
                     <label for="npatch">Patchfeld</label>
-                    <input type="number" class="form-control" id="npatch">
+                    <input type="number" class="form-control" id="npatch" ng-model="AD.npatch">
                 </div>
                 <div class="form-group">
                     <label for="nswitch">Switch</label>
-                    <input type="number" class="form-control" id="nswitch">
+                    <input type="number" class="form-control" id="nswitch" ng-model="AD.nswitch">
                 </div>
                 <div class="form-group">
                     <label for="nport">Port</label>
-                    <input type="number" class="form-control" id="nport">
+                    <input type="number" class="form-control" id="nport" ng-model="AD.nport">
                 </div>
             </form>
         </div>
@@ -73,7 +69,9 @@
 
                 <div class="form-group">
                     <label for="comment">Comment:</label>
-                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <textarea class="form-control" rows="5" id="comment" ng-model="AD.comment"></textarea>
                 </div>
+
+    <button class="btn btn-primary" ng-click="Fertig()">Fertig </button>
 </div>
 </body>

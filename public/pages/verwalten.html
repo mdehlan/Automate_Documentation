@@ -1,5 +1,12 @@
+<!--Verwalten-->
 
-<body>
+<body ng-controller="test">
 <div class="jumbotron text-center">
 <H1>Verwalten</H1>
+    <div ng-controller="read">
+    <div ng-repeat="data in AD">
+        <h1>{{data.name}}</h1>
+        <h1>{{data.inv}}</h1>
+    </div>
+        </div>
 </body>
